@@ -13,7 +13,7 @@
 **Ecossistema completo para servidores Lineage II · L2J**  
 Desenvolvido e evoluído por **L2JALN** — Team-L2JALN · DeV A.L.N
 
-[📦 Releases](#-o-que-vem-na-release) · [🚀 Build](#-build-rápido) · [⚙️ Config](#️-configuração-padrão-l2jaln) · [🎮 Mods](#-mods-incluídos-build-free)
+[📦 Releases](#-o-que-vem-na-release) · [🚀 Build](#-build-rápido) · [🚫 Suporte](#-política-de-suporte) · [⚙️ Config](#️-configuração-padrão-l2jaln) · [🎮 Mods](#-mods-incluídos-build-free)
 
 ---
 
@@ -21,6 +21,31 @@ Desenvolvido e evoluído por **L2JALN** — Team-L2JALN · DeV A.L.N
 
 > 📌 **Este repositório** traz o **código-fonte** e a documentação de compilação.  
 > Na secção **Releases** do repositório está o pacote completo: **source**, **patch**, **site**, **pack** e **programas** auxiliares.
+
+---
+
+## 🚫 Política de suporte
+
+> **⚠️ IMPORTANTE — leia antes de abrir issue ou pedir ajuda**
+
+Este projeto é distribuído **como está** (*as-is*), para estudo e uso por conta própria. **Não há suporte oficial** para:
+
+| 🚫 | Não damos suporte para |
+|:---:|:---|
+| ➕ | **Adicionar mods** — integrar mods novos, voiced, eventos ou sistemas de terceiros |
+| 📝 | **Alterar a source** — Java, handlers, core, refatoração ou debug de código |
+| ⚙️ | **Configurar a pack** — rates, IP, MySQL, `l2jalnmod`, eventos, drops, spawns, etc. |
+| 📘 | **Padrão aCis / L2J genérico** — tutoriais de ACIS retail, “como configurar servidor L2J” do zero |
+
+### ✅ O que este repositório oferece
+
+| ✅ | Incluído |
+|:---:|:---|
+| 📦 | **Release** com source, patch, pack, site e ferramentas |
+| 🔨 | **Build documentado** — `ant jar` (ver secção abaixo) |
+| 📖 | **Guias na pack** — `GUIA-RAPIDO.txt`, `GUIA-CONFIG-SERVIDOR.txt`, `MODS-PACK-FREE.txt` *(leitura por sua conta)* |
+
+Cada administrador **adapta, configura e desenvolve** o servidor de forma **independente**. Dúvidas sobre mods, source ou config devem ser resolvidas pela **sua equipa** ou pela **comunidade** — não pelo autor desta release gratuita.
 
 ---
 
@@ -37,7 +62,7 @@ Desenvolvido e evoluído por **L2JALN** — Team-L2JALN · DeV A.L.N
 </tr>
 <tr>
 <td>🎯</td>
-<td><strong>Objetivo</strong> — Source <strong>madura e gratuita</strong> para cada administrador montar e configurar o seu próprio servidor.</td>
+<td><strong>Objetivo</strong> — Source <strong>madura e gratuita</strong> para montar o seu servidor — <strong>sem suporte</strong> de configuração ou desenvolvimento por parte do autor.</td>
 </tr>
 </table>
 
@@ -155,7 +180,8 @@ Consulte `pack Free/MODS-PACK-FREE.txt` para o inventário atualizado.
 | `config/server.properties` | IP, portas, rates |
 | `config/custom/server-mods.properties` | Liga / desliga mods |
 
-> ✏️ Edite em `config/` → execute `ant jar` → sincroniza com `pack Free/`
+> ✏️ Edite em `config/` → execute `ant jar` → sincroniza com `pack Free/`  
+> 🚫 **Sem suporte** para dúvidas de configuração — use os guias `.txt` na pack como referência.
 
 ---
 
@@ -185,6 +211,8 @@ Distribuído sob **Apache License 2.0** — ver [LICENSE](LICENSE).
 Este software destina-se a fins **educacionais** e de **estudo** de emulação de servidores privados.  
 Lineage II e marcas relacionadas pertencem aos seus titulares.  
 Os mantenedores **não se responsabilizam** pelo uso em produção sem licenças e conformidade legal.
+
+**Sem garantia de suporte técnico** — incluindo mods, alterações na source, configuração da pack ou procedimentos padrão aCis/L2J.
 
 ---
 
