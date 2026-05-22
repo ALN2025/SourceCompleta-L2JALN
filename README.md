@@ -162,7 +162,6 @@ source-free/
 | ⚔️ **Eventos PvP** | KTB · TvT · Multi TvT · CTF · Death Match · Last Man · Fortress · PvP Event · Solo Boss · Tournament · Territory War |
 | 🌍 **Zonas** | Party Zone · Demon Zone · Bonus Zone |
 | 🎨 **Interface** | VIP · Skins DressMe · Menu mod · Startup · `.pack` · Raid command · Auto Farm voiced |
-| 🚫 **Removidos nesta FREE** | Random Farm · Farm CLT · Club da Luta · Dungeon · Time Instance · PIX |
 
 Consulte `pack Free/MODS-PACK-FREE.txt` para o inventário atualizado.
 
