@@ -1,153 +1,203 @@
-# SourceCompleta-L2JALN
+<div align="center">
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+# ⚔️ SourceCompleta-L2JALN
 
-**SOURCE + PATCH + PACK** — ecossistema completo para servidores Lineage II baseados em L2J, desenvolvido e evoluído pela **L2JALN** (Team-L2JALN / DeV A.L.N).
+### *SOURCE · PATCH · PACK · SITE · TOOLS*
 
-> Este repositório contém o **código-fonte** e a documentação de build.  
-> Na secção **Releases** deste repositório você encontra o pacote pronto para uso: **source**, **patch**, **site**, **pack** e **programas** auxiliares.
+[![License](https://img.shields.io/badge/License-Apache%202.0-2b6cb0?style=for-the-badge&logo=apache)](LICENSE)
+[![Java](https://img.shields.io/badge/Java-11-ed8b00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-5.5-4479a1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Ant](https://img.shields.io/badge/Build-Apache%20Ant-a81c07?style=for-the-badge)](build.xml)
+[![Geodata](https://img.shields.io/badge/Geodata-L2D%20ATT-6c5ce7?style=for-the-badge)]()
 
----
+**Ecossistema completo para servidores Lineage II · L2J**  
+Desenvolvido e evoluído por **L2JALN** — Team-L2JALN · DeV A.L.N
 
-## Sobre o projeto
-
-Em **2017**, este trabalho começou a partir de uma base open source de servidor L2J — na época, sem estrutura moderna de **voiced commands**, sem o ecossistema de mods que existe hoje e com diversos pontos instáveis no core. Desde então, o foco foi **corrigir**, **refatorar** e **evoluir** o projeto de forma contínua:
-
-- Correções de bugs e compatibilidade no GameServer e LoginServer  
-- Sistemas de comandos voiced (`.menu`, `.vip`, `.skin`, eventos, donate, raid, auto farm, entre outros)  
-- Eventos PvP e instanciados (TvT, CTF, KTB, Tournament, Territory War, Solo Boss, etc.)  
-- Zonas custom (Party, Demon, Bonus), VIP, skins DressMe, startup de personagem, Community Board  
-- Configuração unificada no padrão **L2JALN** (`l2jaln.properties`, `l2jalnmod.properties`, `l2jalnevents.properties`)  
-- **Geodata L2D (ATT)** já integrada na pack  
-- Build simplificada com **Apache Ant** e perfil **FREE** para distribuição aberta  
-
-O resultado é uma source **madura e atual**, pensada para quem monta servidor próprio e quer adaptar rates, mods e conteúdo — cada administrador configura o seu mundo.
+[📦 Releases](#-o-que-vem-na-release) · [🚀 Build](#-build-rápido) · [⚙️ Config](#️-configuração-padrão-l2jaln) · [🎮 Mods](#-mods-incluídos-build-free)
 
 ---
 
-## O que vem na Release
+</div>
 
-| Componente | Descrição |
-|------------|-----------|
-| **Source** | Código Java completo (`java/`, `build.xml`) |
-| **Patch** | Ajustes e diffs aplicáveis ao cliente/servidor conforme a release |
-| **Pack** | GameServer + LoginServer prontos (`pack Free/`) |
-| **Site** | Painel / páginas web (`site/`) |
-| **Programas** | Ferramentas auxiliares (editores, conversores, utilitários) |
-
-> Baixe sempre a **última release** para obter o conjunto completo. O clone deste repositório é indicado para quem vai **compilar**, **estudar** ou **contribuir** com o código.
+> 📌 **Este repositório** traz o **código-fonte** e a documentação de compilação.  
+> Na secção **Releases** do repositório está o pacote completo: **source**, **patch**, **site**, **pack** e **programas** auxiliares.
 
 ---
 
-## Requisitos
+## 🌟 Sobre o projeto
 
-| Requisito | Versão recomendada |
-|-----------|-------------------|
-| **JDK** | 11 |
-| **MySQL** | 5.5 |
-| **Apache Ant** | 1.9+ |
-| **Sistema** | Windows ou Linux |
+<table>
+<tr>
+<td width="80">📅</td>
+<td><strong>2017</strong> — Início a partir de uma base open source L2J: sem <strong>voiced commands</strong>, core instável e quase sem mods.</td>
+</tr>
+<tr>
+<td>🔧</td>
+<td><strong>Hoje</strong> — Anos de correções, refatoração e sistemas novos: eventos PvP, zonas, VIP, skins, menu mod, Territory War e dezenas de mods atuais.</td>
+</tr>
+<tr>
+<td>🎯</td>
+<td><strong>Objetivo</strong> — Source <strong>madura e gratuita</strong> para cada administrador montar e configurar o seu próprio servidor.</td>
+</tr>
+</table>
 
-Geodata **L2D (ATT)** já incluída na estrutura da pack — não é necessário baixar geodata separadamente para o perfil distribuído.
+```
+  2017          open source L2J          correções + voiced + eventos
+    │                    │                         │
+    └────────────────────┴─────────────────────────┴──►  PACK L2JALN FREE (2025+)
+```
 
 ---
 
-## Build rápido
+## 📦 O que vem na Release
 
-1. Instale o **JDK 11** e configure `JAVA_HOME` (ou crie `build.local.properties`):
+| | Componente | Conteúdo |
+|:---:|:---|:---|
+| 💻 | **Source** | Código Java completo — `java/`, `build.xml` |
+| 🩹 | **Patch** | Ajustes para cliente / servidor |
+| 📁 | **Pack** | GameServer + LoginServer prontos — `pack Free/` |
+| 🌐 | **Site** | Painel e páginas web — `site/` |
+| 🛠️ | **Programas** | Ferramentas auxiliares (editores, conversores) |
+
+> ⬇️ Baixe sempre a **última Release** para o conjunto completo.  
+> Clone este repo para **compilar**, **estudar** ou **contribuir**.
+
+---
+
+## 📋 Requisitos
+
+<div align="center">
+
+| ☕ JDK | 🐬 MySQL | 🔨 Ant | 💾 SO | 🗺️ Geodata |
+|:---:|:---:|:---:|:---:|:---:|
+| **11** | **5.5** | **1.9+** | Win / Linux | **L2D ATT** *(na pack)* |
+
+</div>
+
+---
+
+## 🚀 Build rápido
+
+### 1️⃣ JDK 11
+
+Crie `build.local.properties` na raiz *(ou use `JAVA_HOME`)*:
 
 ```properties
 local.jdk.home=C:/Program Files/Java/jdk-11.0.4
 ```
 
-2. Na raiz do projeto:
+### 2️⃣ Compilar
 
 ```bash
 ant jar
 ```
 
-3. Saída:
+### 3️⃣ Resultado
 
-- `build/l2jserver.jar` — JAR compilado (modo **FREE**)  
-- `pack Free/gameserver/libs/l2jserver.jar` — cópia para a pack  
-- `pack Free/gameserver/config/` — configs sincronizadas (padrão L2JALN)  
-- `pack Free/gameserver/data/` — HTML, XML, geodata, multisell  
-
-Outros alvos úteis:
+| 📂 Caminho | 📄 Descrição |
+|:---|:---|
+| `build/l2jserver.jar` | JAR compilado — modo **FREE** |
+| `pack Free/gameserver/libs/l2jserver.jar` | Cópia automática para a pack |
+| `pack Free/gameserver/config/` | Configs **L2JALN** sincronizadas |
+| `pack Free/gameserver/data/` | HTML, XML, geodata, multisell |
 
 ```bash
-ant compile   # apenas compilar
-ant clean     # limpar build/
+ant compile   # ⚡ só compilar
+ant clean     # 🧹 limpar build/
 ```
 
 ---
 
-## Estrutura do repositório
+## 📂 Estrutura do repositório
 
 ```
 source-free/
-├── java/                 # Código-fonte GameServer / Login / mods
-├── config/               # Configuração de desenvolvimento (padrão L2JALN)
-├── data/                 # HTML, XML, scripts, geodata
-├── pack Free/            # Pack pronta (gameserver, login, site)
-├── lib/                  # Dependências (.jar)
-├── dist/                 # Scripts de arranque
-├── build.xml             # Build Ant (ant jar)
-└── README.md
+├── 📜 java/              → Código-fonte (GS, Login, mods)
+├── ⚙️ config/            → Config desenvolvimento (L2JALN)
+├── 📊 data/              → HTML, XML, scripts
+├── 📦 pack Free/         → Pack pronta (GS + Login + site)
+├── 📚 lib/               → Dependências .jar
+├── 🚀 dist/              → Scripts de arranque
+└── 🔨 build.xml          → ant jar
 ```
 
-Documentação adicional na pack:
-
-- `pack Free/MODS-PACK-FREE.txt` — lista de mods incluídos nesta build FREE  
-- `pack Free/GUIA-RAPIDO.txt` / `GUIA-CONFIG-SERVIDOR.txt` — configuração do servidor  
+📖 **Docs na pack:** `MODS-PACK-FREE.txt` · `GUIA-RAPIDO.txt` · `GUIA-CONFIG-SERVIDOR.txt`
 
 ---
 
-## Mods incluídos (build FREE)
+## 🎮 Mods incluídos (build FREE)
 
-Eventos PvP, zonas custom, VIP, skins, menu mod, startup, Territory War, Tournament, comandos voiced e muito mais. Consulte `MODS-PACK-FREE.txt` para o inventário atualizado.
+<details>
+<summary><strong>📜 Clique para ver a lista completa</strong></summary>
 
-Mods premium (ex.: roleta avançada, sistemas comerciais específicos) foram removidos ou desativados nesta distribuição FREE — cada administrador pode evoluir a source conforme a sua necessidade.
+<br>
 
----
+| Categoria | Mods |
+|:---|:---|
+| ⚔️ **Eventos PvP** | KTB · TvT · Multi TvT · CTF · Death Match · Last Man · Fortress · PvP Event · Solo Boss · Tournament · Territory War |
+| 🌍 **Zonas** | Party Zone · Demon Zone · Bonus Zone |
+| 🎨 **Interface** | VIP · Skins DressMe · Menu mod · Startup · `.pack` · Raid command · Auto Farm voiced |
+| 🚫 **Removidos nesta FREE** | Random Farm · Farm CLT · Club da Luta · Dungeon · Time Instance · PIX |
 
-## Configuração (padrão L2JALN)
+Consulte `pack Free/MODS-PACK-FREE.txt` para o inventário atualizado.
 
-| Ficheiro | Função |
-|----------|--------|
-| `config/l2jaln.properties` | Core ALN — skins, Territory War, itens especiais |
-| `config/custom/l2jalnmod.properties` | Mods, donate, augment, flags gerais |
-| `config/custom/l2jalnevents.properties` | Zonas farm, Party / Bonus / Demon Zone |
-| `config/server.properties` | IP, portas, rates base |
-| `config/custom/server-mods.properties` | Liga/desliga mods no runtime |
-
-Edite em `config/` e execute `ant jar` para sincronizar com `pack Free/`.
+</details>
 
 ---
 
-## História e créditos
+## ⚙️ Configuração padrão L2JALN
 
-- **Início:** 2017 — fork e evolução de base open source L2J  
-- **Desenvolvimento contínuo:** correções, voiced commands, eventos, zonas, interface e dezenas de mods  
-- **Marca:** L2JALN — Team-L2JALN — DeV A.L.N  
+| 📄 Ficheiro | 🎯 Função |
+|:---|:---|
+| `config/l2jaln.properties` | Core ALN — skins, Territory War, itens |
+| `config/custom/l2jalnmod.properties` | Mods, donate, augment, flags |
+| `config/custom/l2jalnevents.properties` | Zonas farm · Party / Bonus / Demon |
+| `config/server.properties` | IP, portas, rates |
+| `config/custom/server-mods.properties` | Liga / desliga mods |
 
-Agradecimento à comunidade L2J open source que possibilitou o ponto de partida; todo o trabalho posterior de correção, mods e pack é fruto de anos de desenvolvimento dedicado.
-
----
-
-## Licença
-
-Distribuído sob a licença **Apache License 2.0**. Ver [LICENSE](LICENSE) para o texto completo.
+> ✏️ Edite em `config/` → execute `ant jar` → sincroniza com `pack Free/`
 
 ---
 
-## Aviso legal
+## 👨‍💻 História e créditos
 
-Este software é fornecido para fins **educacionais** e de **estudo** de emulação de servidores privados. O uso de Lineage II e marcas relacionadas é propriedade dos seus respectivos titulares. Os mantenedores não se responsabilizam pelo uso em produção sem as devidas licenças e conformidade legal.
+| | |
+|:---|:---|
+| 🏁 **Início** | 2017 — fork open source L2J |
+| 🔨 **Evolução** | Voiced commands · eventos · zonas · interface · mods |
+| 🏷️ **Marca** | **L2JALN** — Team-L2JALN — DeV A.L.N |
+
+Agradecimento à comunidade L2J open source pelo ponto de partida.  
+Todo o trabalho de correção, mods e pack é fruto de **anos de desenvolvimento dedicado**.
 
 ---
 
-<p align="center">
-  <strong>L2JALN</strong> — Team-L2JALN · DeV A.L.N<br>
-  <em>Source evoluída desde 2017 — da base open source ao servidor completo de hoje.</em>
-</p>
+## 📜 Licença
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=flat-square)](LICENSE)
+
+Distribuído sob **Apache License 2.0** — ver [LICENSE](LICENSE).
+
+---
+
+## ⚠️ Aviso legal
+
+Este software destina-se a fins **educacionais** e de **estudo** de emulação de servidores privados.  
+Lineage II e marcas relacionadas pertencem aos seus titulares.  
+Os mantenedores **não se responsabilizam** pelo uso em produção sem licenças e conformidade legal.
+
+---
+
+<div align="center">
+
+### ⚔️ L2JALN
+
+**Team-L2JALN** · **DeV A.L.N**
+
+*Source evoluída desde 2017 — da base open source ao servidor completo de hoje.*
+
+<br>
+
+⭐ Se este projeto te ajudou, deixa uma **estrela** no repositório!
+
+</div>
